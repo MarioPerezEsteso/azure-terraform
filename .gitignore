@@ -7,3 +7,5 @@
 
 # .tfvars files
 *.tfvars
+
+export_azure_rm_credentials.sh
