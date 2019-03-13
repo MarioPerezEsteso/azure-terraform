@@ -3,10 +3,12 @@ provider "azurerm" {
 }
 
 data "terraform_remote_state" "resource_groups" {
-  backend = "local"
+  backend = "azurerm"
 
   config {
-    path = "../resource-groups/terraform.tfstate"
+    storage_account_name = "storagetfstate"
+    container_name       = "terraform"
+    key                  = "resource_groups.terraform.tfstate"
   }
 }
 
