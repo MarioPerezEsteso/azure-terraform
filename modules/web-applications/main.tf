@@ -8,10 +8,11 @@ resource "azurerm_app_service" "webapp_service" {
   app_settings = {
     DB_DATABASE = "${var.sql_database_name}"
     DB_HOST     = "${var.sql_database_host}"
+    MY_ENV      = "whatever"
   }
-  
+
   site_config = {
-    always_on                 = true
-    http2_enabled             = true
+    always_on     = true
+    http2_enabled = true
   }
 }
