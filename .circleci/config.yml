@@ -52,11 +52,11 @@ apply_job: &apply_job
         name: terraform apply
         command: |
           cd suscriptions/pre-production/resource-groups
-          terraform apply --auto-approve ../../terraform-resource-groups.plan
+          terraform apply --auto-approve
           cd ../../../suscriptions/pre-production/sqlserver
-          terraform apply --auto-approve ../../terraform-sqlserver.plan
+          terraform apply --auto-approve
           cd ../../../suscriptions/pre-production/web-applications
-          terraform apply --auto-approve ../../../terraform-web-applications.plan
+          terraform apply --auto-approve
 jobs:
 
   build:
@@ -111,11 +111,11 @@ jobs:
           name: terraform plan
           command: |
             cd suscriptions/pre-production/resource-groups
-            terraform plan -out=../../../terraform-resource-groups.plan
+            terraform plan
             cd ../../../suscriptions/pre-production/sqlserver
-            terraform plan -out=../../../terraform-sqlserver.plan
+            terraform plan
             cd ../../../suscriptions/pre-production/web-applications
-            terraform plan -out=../../../terraform-web-applications.plan
+            terraform plan
 
   apply:
     <<: *apply_job
