@@ -52,9 +52,9 @@ apply_job: &apply_job
         name: terraform apply
         command: |
           cd suscriptions/pre-production/resource-groups
-          terraform apply --auto-approve ../../terraform-resource-groups.plan
+          terraform apply --auto-approve ../../../terraform-resource-groups.plan
           cd ../../../suscriptions/pre-production/sqlserver
-          terraform apply --auto-approve ../../terraform-sqlserver.plan
+          terraform apply --auto-approve ../../../terraform-sqlserver.plan
           cd ../../../suscriptions/pre-production/web-applications
           terraform apply --auto-approve ../../../terraform-web-applications.plan
 jobs:
