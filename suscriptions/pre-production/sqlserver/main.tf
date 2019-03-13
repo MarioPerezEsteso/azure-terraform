@@ -29,4 +29,3 @@ resource "azurerm_sql_database" "pre_production" {
   edition             = "${var.edition}"
   collation           = "${var.collation}"
 }
-
