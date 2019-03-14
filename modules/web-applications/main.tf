@@ -10,6 +10,7 @@ resource "azurerm_app_service" "webapp_service" {
     DB_HOST     = "${var.sql_database_host}"
     MY_ENV      = "whatever"
     ANOTHER     = "another"
+    OTRA        = "OTRA"
   }
 
   site_config = {
