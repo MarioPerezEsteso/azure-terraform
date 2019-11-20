@@ -1,24 +1,24 @@
 variable "name" {
-  type = "string"
+  type = string
 }
 
 variable "resource_group_name" {
-  type = "string"
+  type = string
 }
 
 variable "location" {
-  type    = "string"
+  type    = string
   default = "North Europe"
 }
 
 variable "app_service_plan_id" {
-  type = "string"
+  type = string
 }
 
 variable "sql_database_name" {
-  type = "string"
+  type = string
 }
 
 variable "sql_database_host" {
-  type = "string"
+  type = string
 }
