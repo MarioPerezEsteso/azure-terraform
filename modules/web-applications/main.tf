@@ -11,6 +11,7 @@ resource "azurerm_app_service" "webapp_service" {
     MY_ENV      = "whatever"
     ANOTHER     = "another"
     OTRA        = "OTRA"
+    COMMIT      = "2019"
   }
 
   site_config {
