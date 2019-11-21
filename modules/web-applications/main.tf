@@ -8,10 +8,11 @@ resource "azurerm_app_service" "webapp_service" {
   app_settings = {
     DB_DATABASE = var.sql_database_name
     DB_HOST     = var.sql_database_host
-    MY_ENV      = "whatever"
+    MY_ENV      = "pre"
     ANOTHER     = "another"
     OTRA        = "OTRA"
     COMMIT      = "2019"
+    CONF        = "2019"
   }
 
   site_config {
