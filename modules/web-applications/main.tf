@@ -10,9 +10,10 @@ resource "azurerm_app_service" "webapp_service" {
     DB_HOST     = var.sql_database_host
     MY_ENV      = "pre"
     ANOTHER     = "another"
-    OTRA        = "OTRA"
-    COMMIT      = "2019"
+    OTRA        = "YUNAMAS"
+    COMMIT      = "2020"
     CONF        = "2019"
+    CHARLA      = "terraform"
   }
 
   site_config {
